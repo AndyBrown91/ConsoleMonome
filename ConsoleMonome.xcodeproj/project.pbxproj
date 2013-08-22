@@ -1,0 +1,321 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E889E85DF4222DF0DA374E4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D7016C6EA846E87649F6429 /* Cocoa.framework */; };
+		79F56E0FF645F44E4B14DD6C /* RecentFilesMenuTemplate.nib in Resources */ = {isa = PBXBuildFile; fileRef = C36943112480FEB399C7F263 /* RecentFilesMenuTemplate.nib */; };
+		A18C540F17C593A900760ACB /* libmonome.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A18C540E17C593A900760ACB /* libmonome.dylib */; };
+		A18C541417C64A6C00760ACB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A18C541317C64A6C00760ACB /* main.cpp */; };
+		A18C542D17C6D4C200760ACB /* MonomeObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A18C542A17C6D4C200760ACB /* MonomeObject.cpp */; };
+		E3AFEF445AAA4B98220F21E3 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 242CD0F2E3ECBA6B8C49415B /* IOKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		242CD0F2E3ECBA6B8C49415B /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		8D7016C6EA846E87649F6429 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		A18C540E17C593A900760ACB /* libmonome.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libmonome.dylib; path = ../../../../../../../../usr/local/lib/libmonome.dylib; sourceTree = "<group>"; };
+		A18C541317C64A6C00760ACB /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = Source/main.cpp; sourceTree = "<group>"; };
+		A18C542017C6B83300760ACB /* MonomeTimerActivity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MonomeTimerActivity.h; path = Source/Activities/MonomeTimerActivity.h; sourceTree = SOURCE_ROOT; };
+		A18C542517C6D4B300760ACB /* MonomeClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MonomeClock.h; path = Source/Activities/MonomeClock.h; sourceTree = "<group>"; };
+		A18C542617C6D4B300760ACB /* MonomeTimerActivityIncludes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MonomeTimerActivityIncludes.h; path = Source/Activities/MonomeTimerActivityIncludes.h; sourceTree = "<group>"; };
+		A18C542717C6D4B300760ACB /* Shapes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Shapes.h; path = Source/Activities/Shapes.h; sourceTree = "<group>"; };
+		A18C542817C6D4B300760ACB /* Squares.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Squares.h; path = Source/Activities/Squares.h; sourceTree = "<group>"; };
+		A18C542917C6D4B300760ACB /* Swirl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Swirl.h; path = Source/Activities/Swirl.h; sourceTree = "<group>"; };
+		A18C542A17C6D4C200760ACB /* MonomeObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MonomeObject.cpp; path = Source/MonomeObject.cpp; sourceTree = "<group>"; };
+		A18C542B17C6D4C200760ACB /* MonomeObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MonomeObject.h; path = Source/MonomeObject.h; sourceTree = "<group>"; };
+		A18C542C17C6D4C200760ACB /* MonomeUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MonomeUtility.h; path = Source/MonomeUtility.h; sourceTree = "<group>"; };
+		B1B9123AA168E3D240A3C096 /* ConsoleMonome */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ConsoleMonome; sourceTree = BUILT_PRODUCTS_DIR; };
+		C36943112480FEB399C7F263 /* RecentFilesMenuTemplate.nib */ = {isa = PBXFileReference; lastKnownFileType = file.nib; path = RecentFilesMenuTemplate.nib; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58AB7D7594FEF9B8DB9092A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A18C540F17C593A900760ACB /* libmonome.dylib in Frameworks */,
+				5E889E85DF4222DF0DA374E4 /* Cocoa.framework in Frameworks */,
+				E3AFEF445AAA4B98220F21E3 /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0251D8679581BAB52CDCAB83 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D7016C6EA846E87649F6429 /* Cocoa.framework */,
+				242CD0F2E3ECBA6B8C49415B /* IOKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F98AC65D1034D586D16B6B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1B9123AA168E3D240A3C096 /* ConsoleMonome */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F62A01AF67E7F7F4DEFC8A3 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A18C540E17C593A900760ACB /* libmonome.dylib */,
+				E3C7B378D2C9EFD2C9EAC2E4 /* NewProject */,
+				91F9083F99B7A866213DEE71 /* Resources */,
+				0251D8679581BAB52CDCAB83 /* Frameworks */,
+				4F98AC65D1034D586D16B6B9 /* Products */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		91F9083F99B7A866213DEE71 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C36943112480FEB399C7F263 /* RecentFilesMenuTemplate.nib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		99A7993041C7732C5413E454 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A18C541017C593BF00760ACB /* Monome */,
+				A18C541317C64A6C00760ACB /* main.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		A18C541017C593BF00760ACB /* Monome */ = {
+			isa = PBXGroup;
+			children = (
+				A18C542217C6C3D700760ACB /* Activities */,
+				A18C542A17C6D4C200760ACB /* MonomeObject.cpp */,
+				A18C542B17C6D4C200760ACB /* MonomeObject.h */,
+				A18C542C17C6D4C200760ACB /* MonomeUtility.h */,
+			);
+			name = Monome;
+			sourceTree = "<group>";
+		};
+		A18C542217C6C3D700760ACB /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				A18C542017C6B83300760ACB /* MonomeTimerActivity.h */,
+				A18C542617C6D4B300760ACB /* MonomeTimerActivityIncludes.h */,
+				A18C542517C6D4B300760ACB /* MonomeClock.h */,
+				A18C542717C6D4B300760ACB /* Shapes.h */,
+				A18C542817C6D4B300760ACB /* Squares.h */,
+				A18C542917C6D4B300760ACB /* Swirl.h */,
+			);
+			name = Activities;
+			sourceTree = "<group>";
+		};
+		E3C7B378D2C9EFD2C9EAC2E4 /* NewProject */ = {
+			isa = PBXGroup;
+			children = (
+				99A7993041C7732C5413E454 /* Source */,
+			);
+			name = NewProject;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0EF3D9BBE21F2B412486F660 /* ConsoleMonome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43B1656B36D48523104C60B2 /* Build configuration list for PBXNativeTarget "ConsoleMonome" */;
+			buildPhases = (
+				3D02A475EE5BBAED81D2AA18 /* Resources */,
+				05BE3D24CF88135C06539D16 /* Sources */,
+				58AB7D7594FEF9B8DB9092A7 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ConsoleMonome;
+			productInstallPath = /usr/bin;
+			productName = NewProject;
+			productReference = B1B9123AA168E3D240A3C096 /* ConsoleMonome */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A3C86D6D9B781003DA2A328B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+			};
+			buildConfigurationList = B3EC2A9C4D7D2B85DEF228A7 /* Build configuration list for PBXProject "ConsoleMonome" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6F62A01AF67E7F7F4DEFC8A3 /* Source */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0EF3D9BBE21F2B412486F660 /* ConsoleMonome */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D02A475EE5BBAED81D2AA18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79F56E0FF645F44E4B14DD6C /* RecentFilesMenuTemplate.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		05BE3D24CF88135C06539D16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A18C541417C64A6C00760ACB /* main.cpp in Sources */,
+				A18C542D17C6D4C200760ACB /* MonomeObject.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3B09D87834E866325749CBA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				DEAD_CODE_STRIPPING = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/include,
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = /usr/bin;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET_ppc = 10.4;
+				PRODUCT_NAME = ConsoleMonome;
+				SDKROOT_ppc = macosx10.5;
+			};
+			name = Release;
+		};
+		42D52DEA44A0827A4E86E02B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PRODUCT_NAME = NewProject;
+				VALID_ARCHS = x86_64;
+				WARNING_CFLAGS = "-Wreorder";
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		888E5F8FDD3D3BADBC63B661 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PRODUCT_NAME = NewProject;
+				VALID_ARCHS = x86_64;
+				WARNING_CFLAGS = "-Wreorder";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		AA76C0C3A61BFCB4CA74EC75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/include,
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = /usr/bin;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET_ppc = 10.4;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = ConsoleMonome;
+				SDKROOT_ppc = macosx10.5;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43B1656B36D48523104C60B2 /* Build configuration list for PBXNativeTarget "ConsoleMonome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA76C0C3A61BFCB4CA74EC75 /* Debug */,
+				3B09D87834E866325749CBA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B3EC2A9C4D7D2B85DEF228A7 /* Build configuration list for PBXProject "ConsoleMonome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42D52DEA44A0827A4E86E02B /* Debug */,
+				888E5F8FDD3D3BADBC63B661 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A3C86D6D9B781003DA2A328B /* Project object */;
+}

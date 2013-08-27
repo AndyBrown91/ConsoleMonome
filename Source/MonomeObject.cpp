@@ -13,7 +13,9 @@
 #include "Squares.h"
 #include "MonomeClock.h"
 #include "Swirl.h"
-#include "Shapes.h"
+#include "StaticShapes.h"
+#include "MovingShapes.h"
+#include "DrumMachine.h"
 
 MonomeObject::MonomeObject()
 {
@@ -73,6 +75,9 @@ void MonomeObject::buttonDown (const monome_event_t* event)
         
         grid[x].flip(y);
     }
+    
+    if (current != nullptr)
+        current->buttonDown(event);
 }
 
 void MonomeObject::menu()
@@ -86,6 +91,8 @@ void MonomeObject::menu()
         cout << "3. Swirly Squares" << endl;
         cout << "4. Swirl" << endl;
         cout << "5. Shapes" << endl;
+        cout << "6. Moving Shapes" << endl;
+        cout << "7. Drum Machine" << endl;
         
         char response;
         cin >> response;
@@ -118,6 +125,19 @@ void MonomeObject::menu()
             {
                 MonomeShapes shape (monome);
                 shape.runActivity();
+                break;
+            }
+            case '6':
+            {
+                MonomeMovingShapes shape (monome, chrono::milliseconds(500));
+                shape.runActivity();
+                break;
+            }
+            case '7':
+            {
+                MonomeDrumMachine drum (monome);
+                current = &drum;
+                drum.runActivity();
                 break;
             }
             case 'q':

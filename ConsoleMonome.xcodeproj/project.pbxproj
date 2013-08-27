@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5E889E85DF4222DF0DA374E4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D7016C6EA846E87649F6429 /* Cocoa.framework */; };
-		79F56E0FF645F44E4B14DD6C /* RecentFilesMenuTemplate.nib in Resources */ = {isa = PBXBuildFile; fileRef = C36943112480FEB399C7F263 /* RecentFilesMenuTemplate.nib */; };
+		A12CDA2017CC213E000CA981 /* libfmodex.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A12CDA1F17CC213E000CA981 /* libfmodex.dylib */; };
 		A18C540F17C593A900760ACB /* libmonome.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A18C540E17C593A900760ACB /* libmonome.dylib */; };
 		A18C541417C64A6C00760ACB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A18C541317C64A6C00760ACB /* main.cpp */; };
 		A18C542D17C6D4C200760ACB /* MonomeObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A18C542A17C6D4C200760ACB /* MonomeObject.cpp */; };
@@ -18,19 +18,21 @@
 /* Begin PBXFileReference section */
 		242CD0F2E3ECBA6B8C49415B /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		8D7016C6EA846E87649F6429 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		A12CDA0117C92961000CA981 /* MovingShapes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovingShapes.h; sourceTree = "<group>"; };
+		A12CDA0417CC04CC000CA981 /* DrumMachine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DrumMachine.h; path = Source/Activities/DrumMachine.h; sourceTree = "<group>"; };
+		A12CDA1F17CC213E000CA981 /* libfmodex.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfmodex.dylib; path = ../../fmod_sdk/fmod/api/lib/libfmodex.dylib; sourceTree = "<group>"; };
 		A18C540E17C593A900760ACB /* libmonome.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libmonome.dylib; path = ../../../../../../../../usr/local/lib/libmonome.dylib; sourceTree = "<group>"; };
 		A18C541317C64A6C00760ACB /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = Source/main.cpp; sourceTree = "<group>"; };
 		A18C542017C6B83300760ACB /* MonomeTimerActivity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MonomeTimerActivity.h; path = Source/Activities/MonomeTimerActivity.h; sourceTree = SOURCE_ROOT; };
 		A18C542517C6D4B300760ACB /* MonomeClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MonomeClock.h; path = Source/Activities/MonomeClock.h; sourceTree = "<group>"; };
 		A18C542617C6D4B300760ACB /* MonomeTimerActivityIncludes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MonomeTimerActivityIncludes.h; path = Source/Activities/MonomeTimerActivityIncludes.h; sourceTree = "<group>"; };
-		A18C542717C6D4B300760ACB /* Shapes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Shapes.h; path = Source/Activities/Shapes.h; sourceTree = "<group>"; };
+		A18C542717C6D4B300760ACB /* StaticShapes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StaticShapes.h; path = Source/Activities/StaticShapes.h; sourceTree = "<group>"; };
 		A18C542817C6D4B300760ACB /* Squares.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Squares.h; path = Source/Activities/Squares.h; sourceTree = "<group>"; };
 		A18C542917C6D4B300760ACB /* Swirl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Swirl.h; path = Source/Activities/Swirl.h; sourceTree = "<group>"; };
 		A18C542A17C6D4C200760ACB /* MonomeObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MonomeObject.cpp; path = Source/MonomeObject.cpp; sourceTree = "<group>"; };
 		A18C542B17C6D4C200760ACB /* MonomeObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MonomeObject.h; path = Source/MonomeObject.h; sourceTree = "<group>"; };
 		A18C542C17C6D4C200760ACB /* MonomeUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MonomeUtility.h; path = Source/MonomeUtility.h; sourceTree = "<group>"; };
 		B1B9123AA168E3D240A3C096 /* ConsoleMonome */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ConsoleMonome; sourceTree = BUILT_PRODUCTS_DIR; };
-		C36943112480FEB399C7F263 /* RecentFilesMenuTemplate.nib */ = {isa = PBXFileReference; lastKnownFileType = file.nib; path = RecentFilesMenuTemplate.nib; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 				A18C540F17C593A900760ACB /* libmonome.dylib in Frameworks */,
 				5E889E85DF4222DF0DA374E4 /* Cocoa.framework in Frameworks */,
 				E3AFEF445AAA4B98220F21E3 /* IOKit.framework in Frameworks */,
+				A12CDA2017CC213E000CA981 /* libfmodex.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,7 +82,7 @@
 		91F9083F99B7A866213DEE71 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				C36943112480FEB399C7F263 /* RecentFilesMenuTemplate.nib */,
+				A12CDA1F17CC213E000CA981 /* libfmodex.dylib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -110,9 +113,11 @@
 				A18C542017C6B83300760ACB /* MonomeTimerActivity.h */,
 				A18C542617C6D4B300760ACB /* MonomeTimerActivityIncludes.h */,
 				A18C542517C6D4B300760ACB /* MonomeClock.h */,
-				A18C542717C6D4B300760ACB /* Shapes.h */,
+				A18C542717C6D4B300760ACB /* StaticShapes.h */,
 				A18C542817C6D4B300760ACB /* Squares.h */,
 				A18C542917C6D4B300760ACB /* Swirl.h */,
+				A12CDA0117C92961000CA981 /* MovingShapes.h */,
+				A12CDA0417CC04CC000CA981 /* DrumMachine.h */,
 			);
 			name = Activities;
 			sourceTree = "<group>";
@@ -135,6 +140,7 @@
 				3D02A475EE5BBAED81D2AA18 /* Resources */,
 				05BE3D24CF88135C06539D16 /* Sources */,
 				58AB7D7594FEF9B8DB9092A7 /* Frameworks */,
+				A12CDA2117CC2359000CA981 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -175,11 +181,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79F56E0FF645F44E4B14DD6C /* RecentFilesMenuTemplate.nib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A12CDA2117CC2359000CA981 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp \"$FMOD_SDK/fmod/api/lib/libfmodex.dylib\"\ncp -f \"$TARGET_BUILD_DIR/$PRODUCT_NAME\"\ncp \"$FMOD_SDK/fmod/api/lib/libfmodex.dylib\" \"$TARGET_BUILD_DIR\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		05BE3D24CF88135C06539D16 /* Sources */ = {
@@ -211,10 +232,15 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/include,
+					"$(FMOD_SDK)",
 				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = /usr/bin;
-				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/usr/local/Cellar/irrklang/lib/irrklang,
+					"\"$(SRCROOT)/../../fmod_sdk/fmod/api/lib\"",
+				);
 				MACOSX_DEPLOYMENT_TARGET_ppc = 10.4;
 				PRODUCT_NAME = ConsoleMonome;
 				SDKROOT_ppc = macosx10.5;
@@ -283,10 +309,15 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/include,
+					"$(FMOD_SDK)",
 				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = /usr/bin;
-				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/usr/local/Cellar/irrklang/lib/irrklang,
+					"\"$(SRCROOT)/../../fmod_sdk/fmod/api/lib\"",
+				);
 				MACOSX_DEPLOYMENT_TARGET_ppc = 10.4;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = ConsoleMonome;

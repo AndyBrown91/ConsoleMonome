@@ -18,6 +18,7 @@
 #include <vector>
 
 #include "MonomeUtility.h"
+#include "MonomeTimerActivity.h"
 
 using namespace std;
 
@@ -44,6 +45,8 @@ private:
     monome_t* monome;
     bitset<8> grid[8];
     bool stopTimer, registerPress;
+    
+    MonomeTimerActivity* current;
     
 };
 

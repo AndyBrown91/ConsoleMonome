@@ -68,7 +68,7 @@ public:
             {
                 if (!input.empty())
                 {
-                    if (input.find("in") != string::npos)
+                    if (input.find("in ") != string::npos)
                     {
                     int intensity = 0;
                     
@@ -103,6 +103,7 @@ public:
     }
     
     virtual void additionalUserInput (string input) {}
+    virtual void buttonDown (const monome_event_t* event) {}
     
     monome_t* monome;
     bool activityRun;

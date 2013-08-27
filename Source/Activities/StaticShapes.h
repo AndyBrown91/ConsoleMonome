@@ -17,16 +17,18 @@ class MonomeShapes : public MonomeTimerActivity
 public:
     MonomeShapes (monome_t* monome, chrono::milliseconds timer = chrono::milliseconds(500))
     : MonomeTimerActivity (monome, timer)
-    { additionalUserInput("up arrow"); /*Init with a smile*/}
+    {
+        additionalUserInput("up arrow"); /*Init with a smile*/
+    }
     
     ~MonomeShapes(){}
     
     void threadLogic (MonomeTimerActivity* activity)
     {
-        MonomeShapes* faces = static_cast<MonomeShapes*>(activity);
+        MonomeShapes* shapes = static_cast<MonomeShapes*>(activity);
         
             for (int i = 0; i < 8; i++)
-                monome_led_col(faces->monome, i, 0, 1, &currentShape[i]);
+                monome_led_col(shapes->monome, i, 0, 1, &currentShape[i]);
     }
 
     void additionalUserInput (string input)
@@ -61,6 +63,7 @@ public:
     
 private:
     vector<uint8_t> currentShape;
+    bool checkPattern;
 };
 
 
